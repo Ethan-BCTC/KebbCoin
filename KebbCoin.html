@@ -130,15 +130,15 @@
                 </div>
                 <div class="col-lg-7 col-12">
                     <div class="hero-image">
-                        <div id="lottie-animation" style="width: 500px; height: 500px;"></div>
+                        <div id="lottie-animation" style="width: 500px; height: 500px; transform: translateX(50px);"></div>
                         <!--================Animation Code================-->
                         <script>
                             var animation = bodymovin.loadAnimation({
-                                container: document.getElementById('lottie-animation'), // Required
-                                path: 'Animation.json', // Required
-                                renderer: 'svg', // Required
-                                loop: true, // Optional
-                                autoplay: true, // Optional
+                                container: document.getElementById('lottie-animation'),
+                                path: 'Animation.json',
+                                renderer: 'svg',
+                                loop: true,
+                                autoplay: true,
                             });
                         </script>
                         <!--<script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script><lottie-player src="https://lottie.host/b14d4a08-0c42-4c1c-94f2-8133463300cd/9U66OzKRls.json" background="#FFFFFF" speed="1" style="width: 300px; height: 300px" loop controls autoplay direction="1" mode="normal"></lottie-player>

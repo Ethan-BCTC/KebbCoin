@@ -175,13 +175,14 @@
                             <script>
                                 var planeanimation = bodymovin.loadAnimation({
                                     container: document.getElementById('plane-animation'),
-                                    path: 'PlaneAnimation.json',
+                                    path: 'Animation.json',
                                     renderer: 'svg',
                                     loop: true,
                                     autoplay: false,
                                 });
                                 var planeID = document.getElementById('plane-animation');
                                 planeID.addEventListener('mouseover', planeanimation.play())
+                                planeID.addEventListener('mouseout', planeanimation.pause())
                             </script>
                         </div>
                         <h4 class="text-title">International</h4>

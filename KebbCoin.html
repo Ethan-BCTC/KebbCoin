@@ -130,11 +130,11 @@
                 </div>
                 <div class="col-lg-7 col-12">
                     <div class="hero-image">
-                        <div id="lottie-animation" style="width: 500px; height: 500px; transform: translateX(150px);"></div>
-                        <!--================Animation Code================-->
+                        <div id="server-animation" style="width: 500px; height: 500px; transform: translateX(150px);"></div>
+                        <!--================Server Animation================-->
                         <script>
                             var animation = bodymovin.loadAnimation({
-                                container: document.getElementById('lottie-animation'),
+                                container: document.getElementById('server-animation'),
                                 path: 'Animation.json',
                                 renderer: 'svg',
                                 loop: true,
@@ -170,7 +170,17 @@
                 <div class="col-lg-4 col-md-6 col-12 wow fadeInUp" data-wow-delay=".2s">
                     <div class="feature-box">
                         <div class="tumb">
-                            <img src="assets/images/features/feature-icon-1.png" alt="">
+                            <!--===========PLANE ANIMATION==========-->
+                            <div id="plane-animation" style="width: 500px; height: 500px; transform: translateX(150px);"></div>
+                            <script>
+                                var animation = bodymovin.loadAnimation({
+                                    container: document.getElementById('plane-animation'),
+                                    path: 'Animation.json',
+                                    renderer: 'svg',
+                                    loop: true,
+                                    autoplay: false,
+                                });
+                            </script>
                         </div>
                         <h4 class="text-title">International</h4>
                         <p>Kebb Coin can be spent in almost any contry without converting currencys!</p>

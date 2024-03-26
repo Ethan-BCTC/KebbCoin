@@ -1,40 +1,21 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>My first Three.js app</title>
-        <style>
-            body { margin: 0; }
-            canvas { display: block; }
-        </style>
+        <title>My Lottie Animation</title>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.7.8/lottie.min.js"></script>
     </head>
     <body>
-        <script src="https://threejs.org/build/three.js"></script>
-        <script src="https://threejs.org/examples/js/loaders/FBXLoader.js"></script>
+        <h1>Header</h1>
+        <div id="lottie-animation" style="width: 500px; height: 500px;"></div>
+        <h5>Footer</h5>
         <script>
-            var scene = new THREE.Scene();
-            var camera = new THREE.PerspectiveCamera(75, window.innerWidth/window.innerHeight, 0.1, 1000);
-
-            var renderer = new THREE.WebGLRenderer();
-            renderer.setSize(window.innerWidth, window.innerHeight);
-            document.body.appendChild(renderer.domElement);
-
-            var loader = new THREE.FBXLoader();
-            loader.load('assets/images/hero/bitcoin.fbx', function (object) {
-                scene.add(object);
+            var animation = bodymovin.loadAnimation({
+                container: document.getElementById('lottie-animation'), // Required
+                path: 'Animation.json', // Required
+                renderer: 'svg', // Required
+                loop: true, // Optional
+                autoplay: true, // Optional
             });
-
-            camera.position.z = 5;
-
-            var animate = function () {
-                requestAnimationFrame(animate);
-                if (scene.children.length > 0) {
-                    scene.children[0].rotation.x += 0.01;
-                    scene.children[0].rotation.y += 0.01;
-                }
-                renderer.render(scene, camera);
-            };
-
-            animate();
         </script>
     </body>
 </html>

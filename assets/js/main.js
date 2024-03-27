@@ -30,7 +30,7 @@ Author: GrayGrids
           logotext.style.setProperty('color', 'black')
         } else {
           header_navbar.classList.remove("sticky");
-          logo.src = 'MatrixLogo.png';
+          logotext.style.setProperty('color', 'white')
         }
 
         // show or hide the back-top-top button

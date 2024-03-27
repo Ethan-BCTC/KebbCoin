@@ -178,8 +178,15 @@
                                     path: 'PlaneAnimation.json',
                                     renderer: 'svg',
                                     loop: true,
-                                    autoplay: false,
+                                    autoplay: True,
                                 });
+                                var planeID = document.getElementById('plane-animation');
+                                planeID.onload(
+                                    planeanimation.play()
+                                )
+                                planeID.onload(
+                                    planeanimation.pause()
+                                )
                                 var planeID = document.getElementById('plane-animation');
                                 planeID.addEventListener('mouseover', planeanimation.play())
                                 planeID.addEventListener('mouseout', planeanimation.pause())

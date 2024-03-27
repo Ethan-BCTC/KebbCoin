@@ -186,7 +186,7 @@
                                     planeanimation.setspeed(1.5);
                                     planeanimation.goToAndStop(40, true)
                                     planeanimation.play();
-                                    setTimeout(function(){planeanimation.pause();}, 500);
+                                    setTimeout(function(){planeanimation.pause();}, 20);
                                 });
                                 //When hovered over, play
                                 document.getElementById('feature-box-IN').addEventListener('mouseover', function(){planeanimation.play()})
@@ -216,9 +216,9 @@
                             var planeID = document.getElementById('lock-animation');
                             lockanimation.addEventListener('DOMLoaded', function() {
                                 lockanimation.setspeed(2);
-                                lockanimation.goToAndStop(107, true)
+                                lockanimation.goToAndStop(106, true)
                                 lockanimation.play();
-                                setTimeout(function(){lockanimation.pause();}, 500);
+                                setTimeout(function(){lockanimation.pause();}, 20);
                             });
                             //When hovered over, play
                             document.getElementById('feature-box-SS').addEventListener('mouseover', function(){lockanimation.play()})

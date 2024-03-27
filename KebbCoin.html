@@ -178,13 +178,13 @@
                                     path: 'PlaneAnimation.json',
                                     renderer: 'svg',
                                     loop: true,
-                                    autoplay: true,
+                                    autoplay: false,
                                 });
                                 var planeID = document.getElementById('plane-animation');
                                 planeanimation.addEventListener('DOMLoaded', function() {
-                                    planeanimation.pause();
+                                    var frameToStartAt = 2; 
+                                    planeanimation.goToAndStop(frameToStartAt, false); 
                                 });
-                                var planeID = document.getElementById('plane-animation');
                                 planeID.addEventListener('mouseover', planeanimation.play())
                                 planeID.addEventListener('mouseout', planeanimation.pause())
                             </script>

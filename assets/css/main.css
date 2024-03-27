@@ -1730,12 +1730,12 @@ ol {
 }
 
 .header .navbar-brand img {
-  width: 400px;
+  width: 350px;
 }
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .header .navbar-brand img {
-    width: 190px;
+    width: 350px;
   }
 }
 

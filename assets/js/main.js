@@ -23,10 +23,11 @@ Author: GrayGrids
         var header_navbar = document.querySelector(".navbar-area");
         var sticky = header_navbar.offsetTop;
 
+        var logotext = document.getElementById('logo-text');
         var logo = document.querySelector('.navbar-brand img')
         if (window.pageYOffset > sticky) {
           header_navbar.classList.add("sticky");
-          logo.src = 'MatrixLogo.png';
+          logotext.style.setProperty('color', 'black')
         } else {
           header_navbar.classList.remove("sticky");
           logo.src = 'MatrixLogo.png';

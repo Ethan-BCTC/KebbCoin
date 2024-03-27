@@ -168,7 +168,7 @@
             </div>
             <div class="row">
                 <div class="col-lg-4 col-md-6 col-12 wow fadeInUp" data-wow-delay=".2s">
-                    <div class="feature-box">
+                    <div class="feature-box" id="feature-box-IN">
                         <div class="tumb">
                             <!--===========PLANE ANIMATION==========-->
                             <div id="plane-animation" style="width: auto; height: auto; transform: translateX(0px);"></div>
@@ -183,12 +183,10 @@
                                 var planeID = document.getElementById('plane-animation');
                                 planeanimation.addEventListener('DOMLoaded', function() {
                                     var frameToStartAt = 3; 
-                                    planeanimation.goToAndStop(frameToStartAt, false); 
-                                    planeanimation.play();
-                                    planeanimation.pause();
+                                    planeanimation.goToAndStop(frameToStartAt, false);
                                 });
-                                planeID.addEventListener('mouseover', planeanimation.play())
-                                planeID.addEventListener('mouseout', planeanimation.pause())
+                                document.getElementById('feature-box-IN').addEventListener('mouseover', planeanimation.play())
+                                document.getElementById('feature-box-IN').addEventListener('mouseout', planeanimation.pause())
                             </script>
                         </div>
                         <h4 class="text-title">International</h4>

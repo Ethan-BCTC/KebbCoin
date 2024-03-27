@@ -184,6 +184,7 @@
                                 planeanimation.addEventListener('DOMLoaded', function() {
                                     var frameToStartAt = 2; 
                                     planeanimation.goToAndStop(frameToStartAt, false); 
+                                    planeanimation.play();
                                 });
                                 planeID.addEventListener('mouseover', planeanimation.play())
                                 planeID.addEventListener('mouseout', planeanimation.pause())

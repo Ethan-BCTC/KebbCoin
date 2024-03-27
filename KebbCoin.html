@@ -183,7 +183,8 @@
                                 var planeID = document.getElementById('plane-animation');
                                 planeanimation.addEventListener('DOMLoaded', function() {
                                     planeanimation.play();
-                                    setTimeout(function(){planeanimation.pause();}, 750);
+                                    planeanimation.goToAndStop(10,true);
+                                    //setTimeout(function(){planeanimation.pause();}, 750);
                                 });
                                 document.getElementById('feature-box-IN').addEventListener('mouseover', function(){planeanimation.play()})
                                 document.getElementById('feature-box-IN').addEventListener('mouseout', function(){planeanimation.pause()})

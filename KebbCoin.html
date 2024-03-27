@@ -181,9 +181,9 @@
                                     autoplay: true,
                                 });
                                 var planeID = document.getElementById('plane-animation');
-                                planeID.onload(
-                                    planeanimation.pause()
-                                )
+                                planeanimation.addEventListener('DOMLoaded', function() {
+                                    planeanimation.pause();
+                                });
                                 var planeID = document.getElementById('plane-animation');
                                 planeID.addEventListener('mouseover', planeanimation.play())
                                 planeID.addEventListener('mouseout', planeanimation.pause())

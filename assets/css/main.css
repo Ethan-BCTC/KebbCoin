@@ -1414,7 +1414,7 @@ ol {
 
 .button .btn:hover {
   color: #fff;
-  background-color: #24126A;
+  background-color: #4e126a;
 }
 
 .button {
@@ -1422,7 +1422,7 @@ ol {
 }
 
 .button .btn-alt {
-  background-color: #24126A !important;
+  background-color: #4e126a !important;
   color: #fff !important;
 }
 
@@ -1443,7 +1443,7 @@ ol {
 }
 
 .button .btn-alt:hover {
-  background-color: #3E80FF !important;
+  background-color: #b53eff !important;
   color: #fff !important;
 }
 
@@ -1492,7 +1492,7 @@ ol {
   width: 100px;
   height: 100px;
   border-radius: 100%;
-  background: #3E80FF;
+  background: #bb3eff;
   -webkit-animation: preloader-fx 1.6s linear infinite;
   animation: preloader-fx 1.6s linear infinite;
 }
@@ -1564,16 +1564,16 @@ ol {
     border-radius: 8px;
   }
   .header .navbar .navbar-nav .nav-item a:hover {
-    color: #3E80FF !important;
+    color: #c53eff !important;
   }
   .header .navbar .navbar-nav .nav-item a.active {
-    color: #3E80FF !important;
+    color: #c53eff !important;
   }
   .header .navbar-nav .nav-item {
     margin: 0;
   }
   .header .navbar-nav .nav-item:hover a {
-    color: #3E80FF;
+    color: #c53eff;
   }
   .header .navbar-nav .nav-item a {
     padding: 12px 16px !important;
@@ -1597,7 +1597,7 @@ ol {
     padding: 12px 12px;
   }
   .header .navbar-nav .nav-item .sub-menu .nav-item a:hover {
-    color: #3E80FF !important;
+    color: #c53eff !important;
   }
   .header .navbar-nav .nav-item a {
     color: #051441;
@@ -1615,7 +1615,7 @@ ol {
   }
   .header .navbar-nav .nav-item .sub-menu li.active {
     background: #fff !important;
-    color: #3E80FF !important;
+    color: #c53eff !important;
   }
   .header .navbar-nav .nav-item .sub-menu .nav-item {
     margin: 0 !important;
@@ -1625,13 +1625,13 @@ ol {
   }
   .header .navbar-nav .nav-item .sub-menu li:hover {
     background: #fff !important;
-    color: #3E80FF !important;
+    color: #c53eff !important;
   }
   .header .navbar-nav .nav-item a {
     font-size: 14px;
   }
   .header .navbar-nav .nav-item a:hover {
-    color: #3E80FF;
+    color: #c53eff;
   }
 }
 
@@ -1658,16 +1658,16 @@ ol {
     border-radius: 8px;
   }
   .header .navbar .navbar-nav .nav-item a:hover {
-    color: #3E80FF !important;
+    color: #c53eff !important;
   }
   .header .navbar .navbar-nav .nav-item a.active {
-    color: #3E80FF !important;
+    color: #c53eff !important;
   }
   .header .navbar-nav .nav-item {
     margin: 0;
   }
   .header .navbar-nav .nav-item:hover a {
-    color: #3E80FF;
+    color: #c53eff;
   }
   .header .navbar-nav .nav-item a {
     padding: 12px 16px !important;
@@ -1691,10 +1691,10 @@ ol {
     padding: 12px 12px;
   }
   .header .navbar-nav .nav-item .sub-menu .nav-item a:hover {
-    color: #3E80FF !important;
+    color: #c53eff !important;
   }
   .header .navbar-nav .nav-item a {
-    color: #051441;
+    color: #300541;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1709,7 +1709,7 @@ ol {
   }
   .header .navbar-nav .nav-item .sub-menu li.active {
     background: #fff !important;
-    color: #3E80FF !important;
+    color: #c53eff !important;
   }
   .header .navbar-nav .nav-item .sub-menu .nav-item {
     margin: 0 !important;
@@ -1719,13 +1719,13 @@ ol {
   }
   .header .navbar-nav .nav-item .sub-menu li:hover {
     background: #fff !important;
-    color: #3E80FF !important;
+    color: #c53eff !important;
   }
   .header .navbar-nav .nav-item a {
     font-size: 14px;
   }
   .header .navbar-nav .nav-item a:hover {
-    color: #3E80FF;
+    color: #c53eff;
   }
 }
 
@@ -1746,12 +1746,12 @@ ol {
 }
 
 .header.sticky .button .btn {
-  background-color: #3E80FF;
+  background-color: #c53eff;
   color: #fff;
 }
 
 .header.sticky .button .btn:hover {
-  background-color: #24126A;
+  background-color: #42126a;
   color: #fff;
 }
 
@@ -1777,11 +1777,11 @@ ol {
 }
 
 .sticky .navbar .navbar-nav .nav-item a.active {
-  color: #3E80FF;
+  color: #c53eff;
 }
 
 .sticky .navbar .navbar-nav .nav-item a {
-  color: #24126A;
+  color: #42126a;
 }
 
 .header .navbar .navbar-nav .nav-item .sub-menu a.active {
@@ -1876,11 +1876,11 @@ ol {
 }
 
 .navbar-nav .nav-item:hover a {
-  color: #3E80FF;
+  color: #c53eff;
 }
 
 .sticky .navbar-nav .nav-item:hover a {
-  color: #3E80FF;
+  color: #c53eff;
 }
 
 .navbar-nav .nav-item a {

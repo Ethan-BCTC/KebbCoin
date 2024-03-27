@@ -180,7 +180,7 @@
                                     loop: true,
                                     autoplay: false,
                                 });
-                                // On load, load the tenth frame, play and pause after .75 seconds
+                                // On load, load the tenth frame, play and pause after .5 seconds
                                 var planeID = document.getElementById('plane-animation');
                                 planeanimation.addEventListener('DOMLoaded', function() {
                                     planeanimation.goToAndStop(40, true)
@@ -198,9 +198,30 @@
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6 col-12 wow fadeInUp" data-wow-delay=".4s">
-                    <div class="feature-box">
+                    <div class="feature-box" id="feature-box-SS">
                         <div class="tumb">
-                            <img src="assets/images/features/feature-icon-2.png" alt="">
+                            <div id="lock-animation" style="width: 250px; height: 250px; transform: translateX(35px); margin: 0px, 0px; padding: 0px;"></div>
+                        
+                        <script>
+                            var lockanimation = bodymovin.loadAnimation({
+                                container: document.getElementById('lock-animation'),
+                                path: 'LockAnimation.json',
+                                renderer: 'svg',
+                                loop: true,
+                                autoplay: false,
+                            });
+                            // On load, load the tenth frame, play and pause after .5 seconds
+                            var planeID = document.getElementById('lock-animation');
+                            lockanimation.addEventListener('DOMLoaded', function() {
+                                lockanimation.goToAndStop(40, true)
+                                lockanimation.play();
+                                setTimeout(function(){lockanimation.pause();}, 500);
+                            });
+                            //When hovered over, play
+                            document.getElementById('feature-box-SS').addEventListener('mouseover', function(){lockanimation.play()})
+                            //When hovered mouse leaves, pause
+                            document.getElementById('feature-box-SS').addEventListener('mouseout', function(){lockanimation.pause()})
+                        </script>
                         </div>
                         <h4 class="text-title">Safe & Secure</h4>
                         <p>Kebb Coin promises the equivalent security of Ether.</p>

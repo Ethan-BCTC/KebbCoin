@@ -171,7 +171,7 @@
                     <div class="feature-box" id="feature-box-IN">
                         <div class="tumb">
                             <!--===========PLANE ANIMATION==========-->
-                            <div id="plane-animation" style="width: 200px; height: 200px; transform: translateX(0px);"></div>
+                            <div id="plane-animation" style="width: 250px; height: 250px; transform: translateX(0px);"></div>
                             <script>
                                 var planeanimation = bodymovin.loadAnimation({
                                     container: document.getElementById('plane-animation'),
@@ -182,8 +182,8 @@
                                 });
                                 var planeID = document.getElementById('plane-animation');
                                 planeanimation.addEventListener('DOMLoaded', function() {
-                                    var frameToStartAt = 3.5; 
-                                    planeanimation.goToAndStop(frameToStartAt, false);
+                                    var frameToStartAt = 15; 
+                                    planeanimation.goToAndStop(frameToStartAt, true);
                                 });
                                 document.getElementById('feature-box-IN').addEventListener('mouseover', function(){planeanimation.play()})
                                 document.getElementById('feature-box-IN').addEventListener('mouseout', function(){planeanimation.pause()})

@@ -182,8 +182,8 @@
                                 });
                                 var planeID = document.getElementById('plane-animation');
                                 planeanimation.addEventListener('DOMLoaded', function() {
-                                    var frameToStartAt = 15; 
-                                    planeanimation.goToAndStop(frameToStartAt, true);
+                                    planeanimation.play();
+                                    setTimeout(function(){planeanimation.pause();}, 1000);
                                 });
                                 document.getElementById('feature-box-IN').addEventListener('mouseover', function(){planeanimation.play()})
                                 document.getElementById('feature-box-IN').addEventListener('mouseout', function(){planeanimation.pause()})

@@ -171,14 +171,14 @@
                     <div class="feature-box">
                         <div class="tumb">
                             <!--===========PLANE ANIMATION==========-->
-                            <div id="plane-animation" style="width: 500px; height: 500px; transform: translateX(0px);"></div>
+                            <div id="plane-animation" style="width: 500px; height: 500px; transform: translateX(100px);"></div>
                             <script>
                                 var planeanimation = bodymovin.loadAnimation({
                                     container: document.getElementById('plane-animation'),
                                     path: 'PlaneAnimation.json',
                                     renderer: 'svg',
                                     loop: true,
-                                    autoplay: false,
+                                    autoplay: true,
                                 });
                                 var planeID = document.getElementById('plane-animation');
                                 planeID.addEventListener('mouseover', planeanimation.play())

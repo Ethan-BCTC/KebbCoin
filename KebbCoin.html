@@ -181,7 +181,6 @@
                                     autoplay: false,
                                 });
                                 // On load, load the tenth frame, play and pause after .5 seconds
-                                var planeID = document.getElementById('plane-animation');
                                 planeanimation.addEventListener('DOMLoaded', function() {
                                     //planeanimation.setspeed(1.5);
                                     planeanimation.goToAndStop(40, true)
@@ -201,6 +200,7 @@
                 <div class="col-lg-4 col-md-6 col-12 wow fadeInUp" data-wow-delay=".4s">
                     <div class="feature-box" id="feature-box-SS">
                         <div class="tumb">
+                            <!--==============Lock Animation=============-->
                             <div id="lock-animation" style="width: 250px; height: 250px; transform: translateX(35px); margin: 0px, 0px; padding: 0px;"></div>
                         
                         <script>
@@ -213,7 +213,6 @@
                             });
                             
                             // On load, load the tenth frame, play and pause after .5 seconds
-                            var planeID = document.getElementById('lock-animation');
                             lockanimation.addEventListener('DOMLoaded', function() {
                                 //lockanimation.setspeed(2);
                                 lockanimation.goToAndStop(106, true)
@@ -233,7 +232,31 @@
                 <div class="col-lg-4 col-md-6 col-12 wow fadeInUp" data-wow-delay=".6s">
                     <div class="feature-box">
                         <div class="tumb">
-                            <img src="assets/images/features/feature-icon-3.png" alt="">
+                            <!--==============Money Animation=============-->
+                            <div id="money-animation" style="width: 250px; height: 250px; transform: translateX(35px); margin: 0px, 0px; padding: 0px;"></div>
+                        
+                        <script>
+                            var moneyanimation = bodymovin.loadAnimation({
+                                container: document.getElementById('money-animation'),
+                                path: 'MoneyAnimation.json',
+                                renderer: 'svg',
+                                loop: true,
+                                autoplay: false,
+                            });
+                            
+                            // On load, load the tenth frame, play and pause after .5 seconds
+                            var MoneyID = document.getElementById('money-animation');
+                            moneyanimation.addEventListener('DOMLoaded', function() {
+                                //lockanimation.setspeed(2);
+                                moneyanimation.goToAndStop(106, true)
+                                moneyanimation.play();
+                                setTimeout(function(){moneyanimation.pause();}, 20);
+                            });
+                            //When hovered over, play
+                            document.getElementById('feature-box-SS').addEventListener('mouseover', function(){moneyanimation.play()})
+                            //When hovered mouse leaves, pause
+                            document.getElementById('feature-box-SS').addEventListener('mouseout', function(){moneyanimation.pause()})
+                        </script>
                         </div>
                         <h4 class="text-title">Idle Money</h4>
                         <p>Why let money sit in a bank when you can convert Kebb Coin and earn more!</p>

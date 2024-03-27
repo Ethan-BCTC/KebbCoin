@@ -2065,22 +2065,22 @@ ol {
 
 .header .button .btn {
   background-color: #fff;
-  color: #24126A;
+  color: #5a126a;
   font-weight: 500;
 }
 
 .header .button .btn:hover {
   color: #fff;
-  background-color: #3E80FF;
+  background-color: #af3eff;
 }
 
 .sticky .button .btn {
-  background-color: #3E80FF;
+  background-color: #af3eff;
   color: #fff;
 }
 
 .sticky .button .btn:hover {
-  background-color: #3E80FF;
+  background-color: #af3eff;
   color: #fff;
 }
 
@@ -2211,7 +2211,7 @@ ol {
 }
 
 .hero-area .hero-content .button .btn:hover {
-  color: #24126A;
+  color: #4b126a;
   background-color: #fff;
 }
 
@@ -2907,7 +2907,7 @@ ol {
 
 .footer .newsletter-form .button .sub-btn:hover {
   color: #fff;
-  background-color: #3E80FF;
+  background-color: #9b3eff;
 }
 
 .footer .copyright-area .inner-content {

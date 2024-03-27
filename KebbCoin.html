@@ -180,12 +180,15 @@
                                     loop: true,
                                     autoplay: false,
                                 });
+                                // On load, load the tenth frame, play and pause after .75 seconds
                                 var planeID = document.getElementById('plane-animation');
                                 planeanimation.addEventListener('DOMLoaded', function() {
-                                    planeanimation.goToAndStart(10,true);
+                                    planeanimation.start();
                                     setTimeout(function(){planeanimation.pause();}, 750);
                                 });
+                                //When hovered over, play
                                 document.getElementById('feature-box-IN').addEventListener('mouseover', function(){planeanimation.play()})
+                                //When hovered mouse leaves, pause
                                 document.getElementById('feature-box-IN').addEventListener('mouseout', function(){planeanimation.pause()})
                             </script>
                         </div>

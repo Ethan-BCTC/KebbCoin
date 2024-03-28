@@ -18,6 +18,10 @@
   border-style: none;
   margin-top: 40px;
 }
+.feature-box-button:hover{
+  color: white;
+  background-color: #b752d3;
+}
 html {
   scroll-behavior: smooth;
 }

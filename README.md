@@ -4,7 +4,7 @@ This is a webpage for my cryptocurrency passion project KebbCoin. Please note fo
 
 
 
-=======================================Credits=======================================
+=======================================Credits=======================================     
 Base Template -   https://uideck.com/templates/cryptoland
 Animation:
   Server - https://lottiefiles.com/animations/crypto-phone-HvM47jDqYG?from=search

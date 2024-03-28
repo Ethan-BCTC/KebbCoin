@@ -184,14 +184,13 @@
                                     loop: true,
                                     autoplay: false,
                                 });
-                                
                                 screen.addEventListener('orientationchange', () => {
                                     if (window.matchMedia('(orientation: portrait)').matches) {
                                      // Screen is in portrait mode
-                                     document.getElementById('plane-animation').autoplay = true;
+                                     planeanimation.play();
                                      } else {
                                     // Screen is in landscape mode
-                                    document.getElementById('plane-animation').autoplay = false;
+                                    planeanimation.pause();
                                  }  
                                     });
                         

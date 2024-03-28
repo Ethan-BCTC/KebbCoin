@@ -184,16 +184,16 @@
                                     loop: true,
                                     autoplay: false,
                                 });
-                                screen.addEventListener('orientationchange', () => {
-                                    if (window.matchMedia('(orientation: portrait)').matches) {
+                                
+                                //screen.addEventListener('orientationchange', () => {
+                                //    if (window.matchMedia('(orientation: portrait)').matches) {
                                      // Screen is in portrait mode
-                                     planeanimation.play();
-                                     } else {
+                                //     planeanimation.play();
+                                //     } else {
                                     // Screen is in landscape mode
-                                    planeanimation.pause();
-                                 }  
-                                    });
-                        
+                                //    planeanimation.pause();
+                                // }  
+                                //    });
                                 // On load, load the tenth frame, play and pause after .5 seconds
                                 planeanimation.addEventListener('DOMLoaded', function() {
                                     //planeanimation.setspeed(1.5);

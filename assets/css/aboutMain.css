@@ -14,7 +14,9 @@
   padding: 10px;
   color: white;
   background-color:#79368c;
-  border-radius: 10px;
+  border-radius: 30px;
+  border-style: none;
+  margin-top: 20px;
 }
 html {
   scroll-behavior: smooth;

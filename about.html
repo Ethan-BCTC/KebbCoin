@@ -169,15 +169,20 @@
                             <h2 class="wow fadeInUp" data-wow-delay=".4s">Message From The Founder</h2>
                             <p></p>
                             <p></p>
-                            <p class="wow fadeInUp" data-wow-delay=".6s" >Hello, I am Ethan Bikert. The founder and CEO of KEBB Software. We are an innovative company pushing the limits of many software industrys and pionering in others, specializing in blockchain and decentralized technology.</p>
+                            <p class="wow fadeInUp" data-wow-delay=".6s" style="margin-bottom: var(--featureTxtPos);">Hello, I am Ethan Bikert. The founder and CEO of KEBB Software. We are an innovative company pushing the limits of many software industrys and pionering in others, specializing in blockchain and decentralized technology.</p>
                             <p></p>
                             <p></p>
-                            <a href="" class="feature-box-button">More about Ethan</a>
+                            <button href="" class="feature-box-button">More about Ethan</button>
                         </div>
                         <div style="float:right">
                             <img src="assets/images/hero/EthanBanner(1).png" style="height: 300px; width: 300px;">
                         </div>
                 </div>
+                <script>
+                    var r = document.querySelector(':root');
+                    var message = document.getElementById('founderMessage');
+                    r.style.setProperty('--featureTxtPos', ((message.offsetHeight / 2)-10).toString + 'px');
+                </script>
            </div>
         </div>
         <div class="row">

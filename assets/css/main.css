@@ -1246,7 +1246,7 @@ ol {
   width: 45px;
   height: 45px;
   line-height: 45px;
-  background: #3E80FF;
+  background: #b83eff;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1273,7 +1273,7 @@ ol {
   box-shadow: 0 1rem 3rem rgba(35, 38, 45, 0.15) !important;
   -webkit-transform: translate3d(0, -5px, 0);
   transform: translate3d(0, -5px, 0);
-  background-color: #3E80FF;
+  background-color: #b83eff;
 }
 
 /* Overlay */
@@ -2691,7 +2691,7 @@ ol {
 	Footer CSS
 ========================================*/
 .footer {
-  background-color: #24126A;
+  background-color: #57126a;
   position: relative;
   padding-bottom: 0;
 }
